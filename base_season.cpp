@@ -31,13 +31,9 @@ std::string Season::get_winner() { return this->winner; }
 
 void Season::set_winner( std::string i_winner ) { this->winner = i_winner; }
 
-// Add print function
-
 std::string* Season::get_top_4() {
     return this->p_top_4;
 }
-
-// Add print function
 
 void Season::set_top_4( std::string *&p_i_top_4, std::size_t i_capacity ) {
     
@@ -98,15 +94,9 @@ void Season::set_finale_songs( std::string *&p_i_finale_songs, std::size_t i_cap
     delete[] p_i_finale_songs;
     p_i_finale_songs = nullptr;
 
-
-    // Maybe implement a function that copies from an array to a pointer?
-
 }
 
 std::size_t Season::get_num_finale_songs() { return this->num_finale_songs; }
-
-
-// Add print function
 
 int Season::get_num_episodes() { return this->num_episodes; }
 
