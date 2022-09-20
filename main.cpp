@@ -13,6 +13,7 @@
 //                 - Similarly, some other names had to be changed due to containing non-ASCII characters, such as Shea Couleé and Océane Aqua-Black.
 //
 // Change log:     - January 13, 2022: v.1.0.0 released.
+//                 - September 20, 2022: v.1.0.1 released. Added a missing break statement.
 
 #include <iostream>
 #include <stdexcept>
@@ -354,6 +355,8 @@ int main () {
             
             All_Stars to_print{allstars_create_season( season )};
             to_print.print( i_intent );
+            
+            break;
         }
         
         default: { throw std::invalid_argument("I'm afraid I didn't understand what you said... awkward.. \n"); }
