@@ -1,7 +1,6 @@
-#ifndef DR_HEADER_LVL_1
-#define DR_HEADER_LVL_1
+#pragma once
 #include <iostream>
-#include "base_season.cpp"
+#include "base_season.hpp"
 
 // Class Declarations
 class Disqualified_Season;
@@ -102,4 +101,3 @@ class All_Stars: public Season {
         std::size_t num_lipsync_assassins;
 
 };
-#endif

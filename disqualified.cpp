@@ -1,5 +1,4 @@
-#ifndef DR_DISQ
-#define DR_DISQ
+#pragma once
 #include <iostream>
 #include "lvl_one.hpp"
 
@@ -118,5 +117,3 @@ void Disqualified_Season::set_disqualified( std::size_t i_placement ) {
 }
 
 std::string Disqualified_Season::get_disqualified() { return this->disqualified; }
-
-#endif

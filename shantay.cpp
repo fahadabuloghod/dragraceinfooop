@@ -1,5 +1,3 @@
-#ifndef DR_SHANT
-#define DR_SHANT
 #include <iostream>
 #include "lvl_one.hpp"
 
@@ -114,5 +112,3 @@ void Shantay_Season::print ( unsigned int i_intent ) {
 std::string Shantay_Season::get_double_shantay() { return this->double_shantay; }
         
 void Shantay_Season::set_double_shantay( std::size_t i_placement_1, std::size_t i_placement_2 ) { this->double_shantay = ( get_contestant( i_placement_1 ) + ", " + get_contestant(i_placement_2) ); }
-
-#endif

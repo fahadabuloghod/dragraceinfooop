@@ -1,29 +1,29 @@
-// Author:          Fahad Abuloghod
+// Author:              Fahad Abuloghod
 //
-// Institution:     University of Waterloo
+// Institution:         University of Waterloo
 //
-// Date of release: January 13, 2022
+// Date of release:     January 13, 2022
 //
-// About:          A program that displays information related to the show RuPaul's Drag Race and related franchises based on user input.
-//                 My intention with this program is to practice the topics of Inheritance, Polymorphism, and the switch statement to strengthen my
-//                 skills in those areas and to better understand the ideas behind object-oriented programming.
-//                 Any questions can be directed to my email at: fahad.abuloghod@gmail.com
+// About:               A program that displays information related to the show RuPaul's Drag Race and related franchises based on user input.
+//                      My intention with this program is to practice the topics of Inheritance, Polymorphism, and the switch statement 
+//                      to strengthen my skills in those areas and to better understand the ideas behind object-oriented programming.
+//                      Any questions can be directed to my email at: fahad.abuloghod@gmail.com
+//
+// Compilation command: I used the following command in the console on VS Code: g++ -std=c++11 main.cpp base_season.cpp sashay.cpp shantay.cpp disqualified.cpp all_stars.cpp disq_shant.cpp sash_shant.cpp disq_sash_shant.cpp
 //
 // Notes:          - Drag Race Thailand currently lacks any lipsync finale songs due to the titles of most of the songs containing non-ASCII characters.
 //                 - Similarly, some other names had to be changed due to containing non-ASCII characters, such as Shea Couleé and Océane Aqua-Black.
 //
 // Change log:     - January 13, 2022: v.1.0.0 released.
 //                 - September 20, 2022: v.1.0.1 released. Added a missing break statement.
+//                 - January 1, 2023: v.1.0.2 released. Reworked include statements to include hpp files only instead of cpp files. A tip I picked up from a TA last term (ECE250: Algorithms and Data Structures, my love). Also added a comment on how to compile if needed.
 
 #include <iostream>
 #include <stdexcept>
-#include "shantay.cpp"
-#include "sashay.cpp"
-#include "disqualified.cpp"
-#include "all_stars.cpp"
-#include "disq_shant.cpp"
-#include "sash_shant.cpp"
-#include "disq_sash_shant.cpp"
+#include "lvl_two.hpp"
+#include "lvl_one.hpp"
+#include "base_season.hpp"
+#include "disq_sash_shant.hpp"
 
 // Function Declarations
 int main ();
@@ -355,7 +355,7 @@ int main () {
             
             All_Stars to_print{allstars_create_season( season )};
             to_print.print( i_intent );
-            
+
             break;
         }
         
@@ -1672,6 +1672,8 @@ All_Stars allstars_create_season ( unsigned int season ) {
             
             break;
         }
+
+        default : { throw std::logic_error{ "An error has occured... This wasn't supposed to happen..." }; }
 
     }
 

@@ -1,7 +1,5 @@
-#ifndef DR_HEADER_LVL_TWO
-#define DR_HEADER_LVL_TWO
-#include "disqualified.cpp"
-#include "shantay.cpp"
+#pragma once
+#include "lvl_one.hpp"
 
 class Disq_Shant : public Shantay_Season {
 
@@ -50,5 +48,3 @@ class Sash_Shant : public Shantay_Season {
         std::string double_sashay;
 
 };
-
-#endif

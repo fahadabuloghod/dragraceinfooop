@@ -56,7 +56,7 @@ void All_Stars::print ( unsigned int i_intent ) {
 
             std::string *p_local{this->get_finale_songs()};
 
-            std::cout << "The ipsync song(s) that were played at the season finale were ";
+            std::cout << "The lipsync song(s) that were played at the season finale were ";
 
             for ( std::size_t index{0}; index < this->get_num_finale_songs(); ++index ) {
                 std::cout << p_local[index];

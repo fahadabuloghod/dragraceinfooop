@@ -1,5 +1,3 @@
-#ifndef DR_SASH_SHANT
-#define DR_SASH_SHANT
 #include <iostream>
 #include "lvl_two.hpp"
 
@@ -121,5 +119,3 @@ void Sash_Shant::print ( unsigned int i_intent ) {
 std::string Sash_Shant::get_double_sashay() { return this->double_sashay; }
         
 void Sash_Shant::set_double_sashay( std::size_t i_placement_1, std::size_t i_placement_2 ) { this->double_sashay = ( get_contestant( i_placement_1 ) + ", " + get_contestant(i_placement_2) ); }
-
-#endif

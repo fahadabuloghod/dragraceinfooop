@@ -1,5 +1,3 @@
-#ifndef DR_SASH
-#define DR_SASH
 #include <iostream>
 #include "lvl_one.hpp"
 
@@ -115,5 +113,3 @@ void Sashay_Season::print ( unsigned int i_intent ) {
 std::string Sashay_Season::get_double_sashay() { return this->double_sashay; }
         
 void Sashay_Season::set_double_sashay( std::size_t i_placement_1, std::size_t i_placement_2 ) { this->double_sashay = ( get_contestant( i_placement_1 ) + ", " + get_contestant(i_placement_2) ); }
-
-#endif
